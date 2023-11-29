@@ -68,7 +68,6 @@ export default function Register() {
 
         if (errorFullName || errorMail || errorPass || errorConfirmPass || errorPhone) {
             setErrorFullName(errorFullName);
-            setErrorUsername('Enter valid username');
             setErrorMail(errorMail);
             setErrorPass(errorPass);
             setErrorConfirmPass(errorConfirmPass);
@@ -87,25 +86,24 @@ export default function Register() {
                 }
             }).then(response => {
                 // console.log(response.data);
-                console.log(response.accessToken);
-                setRegisterSuccess(true);
+                
+                setErrorFullName("");
+                setErrorMail("");
+                setErrorPass("");
+                setErrorConfirmPass("");
+                setErrorPhone("");
+                
+                if ( response.data.token ) {
+                    setRegisterSuccess(true);
+                    setRegister("Registration Successfull ");
+                }
                 if(RegisterSuccess){
                     history("/Unicode-Task-3/login");
                 }
             }).catch(err => {
-                if (err.response?.status === 409) {
-                    setErrorUsername('Username already taken');
-                } else {
-                    setRegister('Registration Failed');
-                }
+                setRegister("Registration Failed !!! ") ;
+                 
             });
-
-            setErrorFullName("");
-            setErrorMail("");
-            setErrorPass("");
-            setErrorConfirmPass("");
-            setErrorPhone("");
-
         }
     }
 
