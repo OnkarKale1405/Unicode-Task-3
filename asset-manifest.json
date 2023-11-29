@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Unicode-Task-3/home/static/css/main.96b66813.css",
-    "main.js": "/Unicode-Task-3/home/static/js/main.96667e86.js",
-    "static/js/787.aad65a53.chunk.js": "/Unicode-Task-3/home/static/js/787.aad65a53.chunk.js",
-    "index.html": "/Unicode-Task-3/home/index.html",
-    "main.96b66813.css.map": "/Unicode-Task-3/home/static/css/main.96b66813.css.map",
-    "main.96667e86.js.map": "/Unicode-Task-3/home/static/js/main.96667e86.js.map",
-    "787.aad65a53.chunk.js.map": "/Unicode-Task-3/home/static/js/787.aad65a53.chunk.js.map"
+    "main.css": "/Unicode-Task-3/static/css/main.96b66813.css",
+    "main.js": "/Unicode-Task-3/static/js/main.30d3054c.js",
+    "static/js/787.aad65a53.chunk.js": "/Unicode-Task-3/static/js/787.aad65a53.chunk.js",
+    "index.html": "/Unicode-Task-3/index.html",
+    "main.96b66813.css.map": "/Unicode-Task-3/static/css/main.96b66813.css.map",
+    "main.30d3054c.js.map": "/Unicode-Task-3/static/js/main.30d3054c.js.map",
+    "787.aad65a53.chunk.js.map": "/Unicode-Task-3/static/js/787.aad65a53.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.96b66813.css",
-    "static/js/main.96667e86.js"
+    "static/js/main.30d3054c.js"
   ]
 }
